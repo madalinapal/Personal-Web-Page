@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="proiect.css" />
+    <title>Personal Webpage</title>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1 align="center">Welcome to my page!</h1>
+      </header>
+    </div>
+    <div class="links">
+      <nav>
+        <ul>
+          <li><a href="proiect.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="formular.html">Contact</a></li>
+          <li>
+            <form>
+              <input type="search" name="q" placeholder="Search query" />
+              <input type="submit" value="Go!" />
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="margin-left: 40px">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello ! I am
+        <b>Madalina Palade</b> and I'm a student at the
+        <b>Faculty of Automatic Control and Computer Science </b> here at the
+        University Politehnica of Bucharest. I'm in my second year of studies
+        and after all these years I'm going to get a <b>Bachelor's Degree</b> in
+        <b>Engineering</b>. I'm part of the 321AA group.
+      </p>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="picture" src="eu2.jpg" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="picture" src="eu1.jpg" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="picture" src="ochi.jpg" alt="" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <br />
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="map">
+      <h2>My location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7662.395151786705!2d26.04466191773719!3d44.435155937993905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201ebafcdf7a3%3A0xeafb513bd76c5277!2sFacultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare!5e0!3m2!1sro!2sro!4v1729490246076!5m2!1sro!2sro"
+        width="400"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </body>
+</html>
