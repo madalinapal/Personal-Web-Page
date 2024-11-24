@@ -1,7 +1,9 @@
+@import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
+
 #page {
   background-color: rgb(104, 179, 30);
   color: white;
-  border: 2px solid black;
+  border: 2px;
   margin: 20 px;
   padding: 20 px;
 }
@@ -11,8 +13,59 @@
 }
 
 body {
-  font-family: Verdana, sans-serif;
   margin: 0;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.links ul li {
+  margin-right: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #d3ffe4;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.links {
+  background-color: transparent;
+}
+
+.links ul {
+  list-style-type: none;
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-family: Bodoni Moda;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+}
+
+.links a:hover {
+  border-bottom: 2px solid #004d24;
+  color: #004d24;
+  background-color: transparent;
+}
+
+.custom-logo {
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
 }
 
 .mySlides {
@@ -140,53 +193,6 @@ iframe {
 
 a:link a:visited {
   color: coral;
-}
-
-nav {
-  background-color: #056b02;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  display: block;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-  color: #fff;
-}
-.links nav ul li form {
-  margin-left: auto;
-}
-.links nav ul li input[type="search"] {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-right: 5px;
-}
-
-.links nav ul li input[type="submit"] {
-  padding: 5px 10px;
-  border: none;
-  background-color: #555;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
 }
 
 .picture {
