@@ -1,11 +1,19 @@
 @import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
 
-#page {
-  background-color: rgb(104, 179, 30);
-  color: white;
+.navigation-bar {
+  /*color: white;*/
   border: 2px;
   margin: 20 px;
   padding: 20 px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #d3ffe4;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  outline: none;
 }
 
 * {
@@ -18,26 +26,22 @@ body {
   font-optical-sizing: auto;
 }
 
-.links ul li {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
   margin-right: 20px;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  background-color: #d3ffe4;
-  transition: box-shadow 0.3s ease;
-  border: none;
-  outline: none;
-}
-
-.links {
+nav {
   background-color: transparent;
 }
 
-.links ul {
+nav ul {
   list-style-type: none;
   list-style: none;
   margin-right: 20px;
@@ -47,7 +51,7 @@ header {
   gap: 20px;
 }
 
-.links a {
+nav a {
   text-decoration: none;
   color: black;
   font-family: Bodoni Moda;
@@ -56,10 +60,49 @@ header {
   position: relative;
 }
 
-.links a:hover {
+nav a:hover {
   border-bottom: 2px solid #004d24;
   color: #004d24;
   background-color: transparent;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999; /* Asigură că este deasupra altor elemente */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:first-child {
+  margin-left: auto; /* Aliniază primul element la dreapta */
+}
+
+.sidebar a {
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #059d54;
+  color: white;
+  border-bottom: none;
 }
 
 .custom-logo {
@@ -68,12 +111,105 @@ header {
   margin-left: 20px;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #003e21;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.home img {
+  width: auto; /* Păstrează proporțiile */
+  height: 80vh; /* Ajustează înălțimea imaginii */
+  margin: 30px 30px;
+  border-radius: 10%;
+  object-fit: contain;
+  display: block;
+}
+
+.details {
+  max-width: 600px;
+  font-family: "Yatra One";
+}
+
+.details h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.details h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #059d54;
+}
+
+.details p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 40px;
+}
+
+.details .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #058743;
+  border: 2px solid #058743;
+  border-radius: 8px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-box a:hover {
+  background-color: rgba(227, 219, 219, 0.872);
+}
+
 .mySlides {
   display: none;
 }
 
 img {
   vertical-align: middle;
+}
+
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #058743;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #058743;
+  text-decoration: none;
+}
+
+.home-sci a:hover {
+  background-color: rgba(227, 219, 219, 0.872);
 }
 
 /* Slideshow container */
@@ -165,11 +301,23 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 800px) {
   .prev,
   .next,
   .text {
     font-size: 11px;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+
+  .details {
+    text-align: center; /* Aliniaza textul în centrul containerului */
+    margin-bottom: 20px; /* Adaugă un spațiu sub secțiunea de detalii */
+  }
+
+  .home img {
+    margin-top: 20px; /* Adaugă un spațiu între imagine și text */
   }
 }
 
