@@ -1,3 +1,5 @@
+@import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
+
 .navigation-bar {
   /*color: white;*/
   border: 2px;
@@ -7,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   height: 120px;
-  background-color: #d3ffe4;
+  background-color: white;
   transition: box-shadow 0.3s ease;
   border: none;
   outline: none;
@@ -45,7 +47,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: black;
-  font-family: Bodoni Moda;
+  font-family: "Bodoni Moda";
   font-weight: 500;
   font-size: 20px;
   position: relative;
@@ -127,7 +129,7 @@ body {
   max-width: 900px;
   margin: 2em auto;
   font: 0.9em/1.2 Arial, Helvetica, sans-serif;
-  background-color: #d3ffe4;
+  background-color: white;
 }
 
 .continut {
@@ -140,8 +142,17 @@ header,
 footer {
   border-radius: 5px;
   padding: 10px;
-  background-color: rgb(207 232 220);
-  border: 2px solid rgb(79 185 227);
+  background-color: #eeeeee;
+  border: 2px solid #046d3d;
+}
+
+footer a {
+  text-decoration: none;
+  color: #046d3d;
+}
+
+footer:hover {
+  background-color: #baddab;
 }
 
 aside {

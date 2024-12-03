@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
 
 .navigation-bar {
-  /*color: white;*/
   border: 2px;
   margin: 20 px;
   padding: 20 px;
@@ -118,6 +117,7 @@ nav a:hover {
   background-color: #003e21;
   color: white;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .home img {
@@ -188,7 +188,7 @@ img {
 
 .home-sci {
   position: absolute;
-  bottom: 40px;
+  bottom: -40px;
   width: 170px;
   display: flex;
   justify-content: space-between;
