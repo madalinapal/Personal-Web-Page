@@ -420,6 +420,17 @@ img {
   transition: width 0.5s ease-in-out;
 }
 
+.projects .section-title {
+  font-size: 3rem;
+  color: #003e21;
+  font-family: "Georgia", serif;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-right: 100px; /* Modifică margin-left în margin-right */
+  text-align: right; /* Aliniaza textul la dreapta */
+  padding: 40px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
