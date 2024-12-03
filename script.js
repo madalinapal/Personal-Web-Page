@@ -46,3 +46,12 @@ function closeSidebar() {
   const sideBar = document.querySelector(".sidebar");
   sideBar.style.display = "none";
 }
+
+function updateProgress(percentage) {
+  const progressBar = document.querySelector(".progress-bar");
+  progressBar.style.width = percentage + "%";
+  progressBar.textContent = percentage + "%";
+}
+
+// Exemplu: Actualizează progresul la 80% după 2 secunde
+setTimeout(() => updateProgress(80), 2000);
