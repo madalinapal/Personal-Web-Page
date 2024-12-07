@@ -111,82 +111,27 @@ nav a:hover {
   margin-left: 20px;
 }
 
-.home {
+.young-info {
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Bodoni Moda;
   display: flex;
-  align-items: center;
-  padding: 0 10%;
-  background-color: #003e21;
-  color: white;
-  flex-wrap: wrap;
-  height: 100vh;
-}
-
-.home img {
-  width: auto; /* Păstrează proporțiile */
-  height: 80vh; /* Ajustează înălțimea imaginii */
-  margin: 30px 30px;
-  border-radius: 10%;
-  object-fit: contain;
-  display: block;
-}
-
-.details {
-  max-width: 600px;
-  font-family: "Yatra One";
-}
-
-.details h1 {
-  font-size: 56px;
-  font-weight: 700;
-}
-
-.details h3 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #059d54;
-}
-
-.details p {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 20px 0 40px;
-}
-
-.details .btn-box {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 345px;
-  height: 50px;
+  gap: 100px;
 }
 
-.btn-box a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 100%;
-  background: #058743;
-  border: 2px solid #058743;
-  border-radius: 8px;
-  font-size: 19px;
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
+.young-info p {
+  font-size: 15px;
 }
 
-.btn-box a:hover {
-  background-color: rgba(227, 219, 219, 0.872);
+.young-info hr {
+  height: 5px;
+  background-color: #003e21;
+  border: none;
+  margin-top: 20px;
 }
-
-.mySlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
 .hobbies-section {
   text-align: center;
   padding: 10px;
@@ -200,6 +145,7 @@ img {
   margin-top: 0;
   text-align: center;
   padding: 40px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Work container */
@@ -258,94 +204,12 @@ img {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
 }
 
 .see-more:hover {
   background-color: #fff;
   color: #000;
-}
-
-/* Stil pentru footer */
-.site-footer {
-  background-color: #003e21; /* Fundal închis */
-  color: #fff; /* Text alb */
-  padding: 30px 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.site-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-.site-footer .footer-links {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  font-family: "Georgia", serif;
-}
-
-.site-footer .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.site-footer .footer-links a:hover {
-  color: #058743; /* Schimbă culoarea la hover */
-}
-
-.home-sci {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.home-sci a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid #058743;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #058743;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.home-sci a:hover {
-  background-color: rgba(227, 219, 219, 0.872);
-}
-
-/* Stil pentru partea de jos a footer-ului */
-.footer-bottom {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #aaa; /* Text mai deschis */
-}
-
-.footer-bottom p {
-  margin: 0;
-}
-
-.skills .section-title {
-  font-size: 3rem;
-  color: #003e21;
-  font-family: "Georgia", serif;
-  margin-bottom: 10px;
-  margin-top: 0;
-  margin-left: 100px;
-  text-align: left;
-  padding: 40px;
 }
 
 .skills {
@@ -364,6 +228,7 @@ img {
   margin-left: 100px;
   text-align: left;
   padding: 40px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .skills-container {
@@ -429,85 +294,7 @@ img {
   margin-right: 100px; /* Modifică margin-left în margin-right */
   text-align: right; /* Aliniaza textul la dreapta */
   padding: 40px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: darkblue;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 hr {
@@ -518,17 +305,119 @@ hr {
   margin: 20px auto; /* Centrare automată (stânga/dreapta) */
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.projects {
+  display: flex;
+  flex-direction: column;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 1435px) {
+.project-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.project-details {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.project-details ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.project-details h2 {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.project-photo {
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Stil pentru footer */
+.site-footer {
+  background-color: #003e21; /* Fundal închis */
+  color: #fff; /* Text alb */
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.site-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-links {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Georgia", serif;
+}
+
+.site-footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.site-footer .footer-links a:hover {
+  color: #058743; /* Schimbă culoarea la hover */
+}
+
+.home-sci {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #058743;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #058743;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-sci a:hover {
+  background-color: rgba(227, 219, 219, 0.872);
+}
+
+/* Stil pentru partea de jos a footer-ului */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Text mai deschis */
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
   .prev,
   .next,
   .text {
@@ -536,23 +425,6 @@ hr {
   }
   .hideOnMobile {
     display: none;
-  }
-
-  .details {
-    text-align: center; /* Aliniaza textul în centrul containerului */
-    margin-bottom: 20px; /* Adaugă un spațiu sub secțiunea de detalii */
-  }
-
-  .home img {
-    max-width: 80%; /* Asigură că imaginea nu va depăși lățimea containerului */
-    height: auto;
-    margin-top: 20px; /* Adaugă un spațiu între imagine și restul conținutului */
-  }
-  .home {
-    padding: 0 5%; /* Micșorează padding-ul */
-    flex-direction: column-reverse; /* Mută imaginea sub butoane */
-    align-items: center;
-    height: auto; /* Permite div-ului să se mărească pe ecrane mici */
   }
   .site-footer .footer-content {
     flex-direction: column;
@@ -562,32 +434,20 @@ hr {
   .home-sci {
     margin-top: 20px;
   }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.links {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: brown;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-iframe {
-  max-width: 100%;
-}
-
-a:link a:visited {
-  color: coral;
-}
-
-.picture {
-  height: 50%;
-  width: 100%;
-  object-fit: cover;
+@media only screen and (max-width: 1200px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-photo {
+    width: 100%;
+  }
 }

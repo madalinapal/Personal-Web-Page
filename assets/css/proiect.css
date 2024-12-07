@@ -1,0 +1,321 @@
+@import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
+
+.navigation-bar {
+  border: 2px;
+  margin: 20 px;
+  padding: 20 px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #d3ffe4;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #d3ffe4;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav {
+  background-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: Bodoni Moda;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #004d24;
+  color: #004d24;
+  background-color: transparent;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999; /* Asigură că este deasupra altor elemente */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:first-child {
+  margin-left: auto; /* Aliniază primul element la dreapta */
+}
+
+.sidebar a {
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #059d54;
+  color: white;
+  border-bottom: none;
+}
+
+.custom-logo {
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #003e21;
+  color: white;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.home img {
+  width: auto; /* Păstrează proporțiile */
+  height: 80vh; /* Ajustează înălțimea imaginii */
+  margin: 30px 30px;
+  border-radius: 10%;
+  object-fit: contain;
+  display: block;
+}
+
+.details {
+  max-width: 600px;
+  font-family: "Yatra One";
+}
+
+.details h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.details h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #059d54;
+}
+
+.details p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 40px;
+}
+
+.details .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #058743;
+  border: 2px solid #058743;
+  border-radius: 8px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-box a:hover {
+  background-color: rgba(227, 219, 219, 0.872);
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Stil pentru footer */
+.site-footer {
+  background-color: #003e21; /* Fundal închis */
+  color: #fff; /* Text alb */
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.site-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-links {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Georgia", serif;
+}
+
+.site-footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.site-footer .footer-links a:hover {
+  color: #058743; /* Schimbă culoarea la hover */
+}
+
+.home-sci {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #058743;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #058743;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-sci a:hover {
+  background-color: rgba(227, 219, 219, 0.872);
+}
+
+/* Stil pentru partea de jos a footer-ului */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Text mai deschis */
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+
+  .details {
+    text-align: center; /* Aliniaza textul în centrul containerului */
+    margin-bottom: 20px; /* Adaugă un spațiu sub secțiunea de detalii */
+  }
+
+  .home img {
+    max-width: 80%; /* Asigură că imaginea nu va depăși lățimea containerului */
+    height: auto;
+    margin-top: 20px; /* Adaugă un spațiu între imagine și restul conținutului */
+  }
+  .home {
+    padding: 0 5%; /* Micșorează padding-ul */
+    flex-direction: column-reverse; /* Mută imaginea sub butoane */
+    align-items: center;
+    height: auto; /* Permite div-ului să se mărească pe ecrane mici */
+  }
+  .site-footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-sci {
+    margin-top: 20px;
+  }
+}
+
+.links {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: brown;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+a:link a:visited {
+  color: coral;
+}
+
+.picture {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}

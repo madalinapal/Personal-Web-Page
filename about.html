@@ -3,23 +3,299 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/about.css" />
     <title>About</title>
   </head>
   <body>
+    <header class="navigation-bar">
+      <!--Link-ul de pe logo care conduce catre pagina home-->
+      <a href="proiect.html"
+        ><img src="assets/images/logo.svg" class="custom-logo"
+      /></a>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="closeSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li><a href="proiect.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="formular.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="proiect.html">Home</a></li>
+          <li class="hideOnMobile"><a href="about.html">About</a></li>
+          <li class="hideOnMobile"><a href="cv.html">CV</a></li>
+          <li class="hideOnMobile"><a href="formular.html">Contact</a></li>
+          <li onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section class="about">
+      <h2 class="section-title">Who am I?</h2>
       <div class="young-info">
-        <h2>Who am I?</h2>
-        <p class="first-par">
-          I was born in Onesti, Bacau on the 17th of January 2005. From a young
-          age I showed interest in fields such as mathematics, physics,
-          geography and informatics. I've been that kind of curious person who
-          wants to learn everything for as long as I can remember.
+        <p>
+          My name is Madalina Ioana Palade. I was born in Onesti, Bacau on the
+          17th of January 2005. From a young age I showed interest in fields
+          such as mathematics, physics, geography and informatics. I've been
+          that kind of curious person who wants to learn everything for as long
+          as I can remember.
         </p>
-        <hr />
-        <h2 style="text-align: right">Hobbies</h2>
-        <h5>Travelling</h5>
-        <hr />
       </div>
     </section>
+
+    <section class="hobbies-section">
+      <hr />
+      <h1 class="section-title">Hobbies</h1>
+      <div class="hobbies-container">
+        <!-- Card 1 -->
+        <div class="hobbies-card">
+          <img
+            src="assets/images/IMG_5162.jpg"
+            alt="VisionBored"
+            class="hobbies-image"
+          />
+          <div class="hobbies-info">
+            <h2>Travelling</h2>
+            <p>
+              Passionate traveler with a love for exploring new cities. So far,
+              I've visited the beautiful streets of <strong>Rome</strong>,
+              <strong>Vienna</strong>, and <strong>Budapest</strong>, and I’m
+              eager to discover even more destinations around the world!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="hobbies-card">
+          <img
+            src="assets/images/IMG_1772.jpg"
+            alt="Cached"
+            class="hobbies-image"
+          />
+          <div class="hobbies-info">
+            <h2>Music</h2>
+            <p>
+              Rock and classical music enthusiast with a deep appreciation for
+              timeless sounds. My favorite bands include
+              <strong>Radiohead</strong> and <strong>Pink Floyd</strong>, and I
+              admire the soul-stirring artistry of
+              <strong>Jeff Buckley</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="hobbies-card">
+          <img
+            src="assets/images/IMG_2330.jpg"
+            alt="Ciri"
+            class="hobbies-image"
+          />
+          <div class="hobbies-info">
+            <h2>Photography</h2>
+            <p>
+              Passionate about capturing moments through the lens, with a
+              particular love for <strong>film photography</strong>. I
+              appreciate the raw, timeless quality it brings to each shot.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="https://ro.pinterest.com/madalinaioanapld/" class="see-more"
+        >find out more &gt;</a
+      >
+    </section>
+    <hr />
+
+    <section class="skills">
+      <h1 class="section-title">Skills</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="progress-bar-wrapper">
+            <p class="skill-label">C++</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 50%">
+                <span>85%</span>
+              </div>
+            </div>
+            <p>
+              I have a solid understanding of C++, with practical experience in
+              object-oriented programming, data structures, and algorithms. I'm
+              capable of tackling moderately complex projects.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="progress-bar-wrapper">
+            <p class="skill-label">Linux</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 70%">
+                <span>75%</span>
+              </div>
+            </div>
+            <p>
+              I have a strong grasp of Linux, including proficiency in the
+              command line, system administration, and shell scripting. I'm
+              capable of managing servers, troubleshooting issues, and
+              optimizing system performance.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="progress-bar-wrapper">
+            <p class="skill-label">Python</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 65%">
+                <span>65%</span>
+              </div>
+            </div>
+            <p>
+              I have a solid understanding of Python, focusing on scripting,
+              automation, and data manipulation. While I'm still refining my
+              skills, I am proficient at creating simple applications and
+              solving problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="projects">
+      <h1 class="section-title">Projects</h1>
+      <div class="project-container">
+        <img src="assets/images/lanParty.webp" class="project-photo" alt="" />
+        <div class="project-details">
+          <h2>LanParty</h2>
+          <ul>
+            <li>
+              Worked on the development of a software solution to automate the
+              process of organizing LAN parties, where students test their
+              gaming skills in a competitive environment.
+            </li>
+            <li>
+              Gained hands-on experience with data structures, including lists,
+              stacks, queues, and binary search trees, and implemented them in a
+              practical scenario
+            </li>
+            <li>
+              Developed practical functionality by applying these data
+              structures to optimize the event organization process.
+            </li>
+          </ul>
+          <a href="https://github.com/madalinapal/LanParty" class="see-more"
+            >go to my project &gt;</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-details">
+          <h2>Dynamic Prediction of Flight Ticket Prices</h2>
+          <ul>
+            <li>
+              Used machine learning models to analyze and predict fluctuations
+              in flight ticket prices based on historical data, demand patterns,
+              and market trends.
+            </li>
+            <li>
+              Implemented a system to provide real-time price predictions,
+              helping users make cost-effective decisions when booking flights.
+            </li>
+            <li>
+              Offered a user-friendly dashboard with visualizations and
+              actionable insights for optimal ticket purchase timing.
+            </li>
+          </ul>
+          <a
+            href="https://github.com/vladakin4105/Dynamic_Prediction_of_Flight_Ticket_Prices"
+            class="see-more"
+            >go to my project &gt;</a
+          >
+        </div>
+        <img src="assets/images/ticket.webp" class="project-photo" />
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="cv.html">CV</a>
+          <a href="formular.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="home-sci">
+          <a href="https://www.facebook.com/madalina.ioana.1701"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              /></svg
+          ></a>
+          <a href="https://www.instagram.com/madalinaa.palade/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/m%C4%83d%C4%83lina-ioana-palade-44b563329/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              /></svg
+          ></a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Personal WebPage. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
