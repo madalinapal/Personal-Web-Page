@@ -1,8 +1,8 @@
+/* Import custom fonts from Google Fonts */
 @import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
 
 .navigation-bar {
-  /*color: white;*/
   border: 2px;
   margin: 20 px;
   padding: 20 px;
@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+nav {
+  background-color: transparent;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -29,10 +33,6 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-}
-
-nav {
-  background-color: transparent;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ nav a:hover {
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999; /* Asigură că este deasupra altor elemente */
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ nav a:hover {
   width: 100%;
 }
 .sidebar li:first-child {
-  margin-left: auto; /* Aliniază primul element la dreapta */
+  margin-left: auto;
 }
 
 .sidebar a {
@@ -193,6 +193,10 @@ li {
   margin-bottom: 0px;
 }
 
+.job span {
+  margin-left: auto;
+}
+
 .job p {
   margin-bottom: 1px;
   font-size: 13px;
@@ -204,8 +208,8 @@ h2 {
 }
 
 .site-footer {
-  background-color: #046d3d; /* Fundal închis */
-  color: #fff; /* Text alb */
+  background-color: #046d3d;
+  color: #fff;
   padding: 30px 0;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -234,7 +238,7 @@ h2 {
 }
 
 .site-footer .footer-links a:hover {
-  color: #058743; /* Schimbă culoarea la hover */
+  color: #058743;
 }
 
 .home-sci {
@@ -263,11 +267,10 @@ h2 {
   background-color: rgba(227, 219, 219, 0.872);
 }
 
-/* Stil pentru partea de jos a footer-ului */
 .footer-bottom {
   margin-top: 20px;
   font-size: 14px;
-  color: #aaa; /* Text mai deschis */
+  color: #aaa;
 }
 
 .footer-bottom p {
@@ -276,5 +279,13 @@ h2 {
 @media only screen and (max-width: 800px) {
   .hideOnMobile {
     display: none;
+  }
+  .site-footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-sci {
+    margin-top: 20px;
   }
 }

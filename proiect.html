@@ -10,21 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <title>Personal Webpage</title>
   </head>
 
   <body>
     <header class="navigation-bar">
-      <!--Link-ul de pe logo care conduce catre pagina home-->
+      <!-- Logo linking back to the homepage -->
       <a href="proiect.html"
         ><img src="assets/images/logo.svg" class="custom-logo"
       /></a>
+      <!-- Navigation menu -->
       <nav>
+        <!-- Sidebar for mobile view -->
         <ul class="sidebar">
+          <!-- Close button for the sidebar -->
           <li onclick="closeSidebar()">
             <a href="#"
               ><svg
@@ -44,11 +43,13 @@
           <li><a href="cv.html">CV</a></li>
           <li><a href="formular.html">Contact</a></li>
         </ul>
+        <!-- Main navigation menu -->
         <ul>
           <li class="hideOnMobile"><a href="proiect.html">Home</a></li>
           <li class="hideOnMobile"><a href="about.html">About</a></li>
           <li class="hideOnMobile"><a href="cv.html">CV</a></li>
           <li class="hideOnMobile"><a href="formular.html">Contact</a></li>
+          <!-- Hamburger menu for mobile view -->
           <li onclick="showSidebar()">
             <a href="#"
               ><svg
@@ -67,6 +68,7 @@
       </nav>
     </header>
 
+    <!-- Main section displaying content -->
     <section class="home">
       <div class="details">
         <h1>Hi, I'm Madalina</h1>
@@ -85,19 +87,6 @@
       </div>
       <img src="assets/images/IMG_2095.JPG" />
     </section>
-
-    <div class="map">
-      <h2>My location</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7662.395151786705!2d26.04466191773719!3d44.435155937993905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201ebafcdf7a3%3A0xeafb513bd76c5277!2sFacultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare!5e0!3m2!1sro!2sro!4v1729490246076!5m2!1sro!2sro"
-        width="400"
-        height="250"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
 
     <footer class="site-footer">
       <div class="footer-content">

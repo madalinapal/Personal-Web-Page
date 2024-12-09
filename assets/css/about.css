@@ -1,3 +1,4 @@
+/* Import custom fonts from Google Fonts */
 @import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
 
@@ -26,6 +27,11 @@ body {
   background-color: #d3ffe4;
 }
 
+/* Navigation-Bar styles */
+nav {
+  background-color: transparent;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -35,10 +41,6 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-}
-
-nav {
-  background-color: transparent;
 }
 
 nav ul {
@@ -66,17 +68,18 @@ nav a:hover {
   background-color: transparent;
 }
 
+/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999; /* Asigură că este deasupra altor elemente */
+  z-index: 999; /* Ensure the sidebar is above other elements */
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
+  display: none; /* Initially hidden */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -86,7 +89,7 @@ nav a:hover {
   width: 100%;
 }
 .sidebar li:first-child {
-  margin-left: auto; /* Aliniază primul element la dreapta */
+  margin-left: auto;
 }
 
 .sidebar a {
@@ -105,12 +108,14 @@ nav a:hover {
   border-bottom: none;
 }
 
+/* Styling logo */
 .custom-logo {
   width: 200px;
   height: auto;
   margin-left: 20px;
 }
 
+/* Information section */
 .young-info {
   padding: 20px;
   margin-left: 50px;
@@ -132,6 +137,7 @@ nav a:hover {
   border: none;
   margin-top: 20px;
 }
+
 .hobbies-section {
   text-align: center;
   padding: 10px;
@@ -148,7 +154,7 @@ nav a:hover {
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Work container */
+/* Layout for hobbies cards */
 .hobbies-container {
   display: flex;
   gap: 20px;
@@ -156,9 +162,9 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/* Card styling */
+/* Styling for each hobby card */
 .hobbies-card {
-  background-color: #eeeeee; /* Card background */
+  background-color: #eeeeee;
   border: 1px solid #046d3d;
   border-radius: 10px;
   overflow: hidden;
@@ -231,14 +237,15 @@ nav a:hover {
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Container for skills section */
 .skills-container {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
   display: flex;
-  justify-content: space-between; /* Spațiere uniformă între skill-uri */
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 10px; /* Reduce spațiul între bare */
+  gap: 10px; /* Reduced spacing between skills */
   flex-wrap: wrap;
 }
 
@@ -246,20 +253,6 @@ nav a:hover {
   flex: 1 1 0; /* Toate au lățime egală */
   max-width: 300px; /* Opțional: limitează lățimea */
   text-align: center;
-}
-
-.progress-bar-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px; /* Spațiu între etichetă și bară */
-}
-
-.skill-label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
 }
 
 .progress-bar-container {
@@ -271,6 +264,15 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Wrapper for progress bar */
+.progress-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Individual progress bar styling */
 .progress-bar {
   height: 100%;
   background: linear-gradient(90deg, #3db24b, #058743);
@@ -291,18 +293,25 @@ nav a:hover {
   font-family: "Georgia", serif;
   margin-bottom: 10px;
   margin-top: 0;
-  margin-right: 100px; /* Modifică margin-left în margin-right */
-  text-align: right; /* Aliniaza textul la dreapta */
+  margin-right: 100px;
+  text-align: right;
   padding: 40px;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.skill-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
 hr {
-  border: none; /* Elimină bordura implicită */
-  height: 3px; /* Înălțimea liniei */
-  background-color: #333; /* Culoarea liniei */
-  width: 80%; /* Lățimea liniei (80% din container) */
-  margin: 20px auto; /* Centrare automată (stânga/dreapta) */
+  border: none;
+  height: 3px;
+  background-color: #333;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .projects {
@@ -310,6 +319,7 @@ hr {
   flex-direction: column;
 }
 
+/* Layout for projects section */
 .project-container {
   display: flex;
   flex-direction: row;
@@ -344,10 +354,9 @@ hr {
   margin-right: 20px;
 }
 
-/* Stil pentru footer */
 .site-footer {
-  background-color: #003e21; /* Fundal închis */
-  color: #fff; /* Text alb */
+  background-color: #003e21;
+  color: #fff;
   padding: 30px 0;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -377,7 +386,7 @@ hr {
 }
 
 .site-footer .footer-links a:hover {
-  color: #058743; /* Schimbă culoarea la hover */
+  color: #058743;
 }
 
 .home-sci {
@@ -406,15 +415,21 @@ hr {
   background-color: rgba(227, 219, 219, 0.872);
 }
 
-/* Stil pentru partea de jos a footer-ului */
 .footer-bottom {
   margin-top: 20px;
   font-size: 14px;
-  color: #aaa; /* Text mai deschis */
+  color: #aaa;
 }
 
 .footer-bottom p {
   margin: 0;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {

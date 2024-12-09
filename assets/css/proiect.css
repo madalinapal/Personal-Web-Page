@@ -1,6 +1,21 @@
+/* Import custom fonts from Google Fonts */
 @import url("fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Yatra+One&display=swap");
 
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles for the document body */
+body {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #d3ffe4;
+}
+
+/* Navigation-Bar styles */
 .navigation-bar {
   border: 2px;
   margin: 20 px;
@@ -15,15 +30,9 @@
   outline: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  background-color: #d3ffe4;
+/* Navigation-Menu */
+nav {
+  background-color: transparent;
 }
 
 nav ul {
@@ -35,10 +44,6 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-}
-
-nav {
-  background-color: transparent;
 }
 
 nav ul {
@@ -66,17 +71,18 @@ nav a:hover {
   background-color: transparent;
 }
 
+/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999; /* Asigură că este deasupra altor elemente */
+  z-index: 999; /* Ensure the sidebar is above other elements */
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
+  display: none; /* Initially hidden */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -86,7 +92,7 @@ nav a:hover {
   width: 100%;
 }
 .sidebar li:first-child {
-  margin-left: auto; /* Aliniază primul element la dreapta */
+  margin-left: auto; /* Align the first item to the right */
 }
 
 .sidebar a {
@@ -105,12 +111,14 @@ nav a:hover {
   border-bottom: none;
 }
 
+/* Styling logo */
 .custom-logo {
   width: 200px;
   height: auto;
   margin-left: 20px;
 }
 
+/* Home section */
 .home {
   display: flex;
   align-items: center;
@@ -119,11 +127,12 @@ nav a:hover {
   color: white;
   flex-wrap: wrap;
   height: 100vh;
+  border-bottom: #d3ffe4;
 }
 
 .home img {
-  width: auto; /* Păstrează proporțiile */
-  height: 80vh; /* Ajustează înălțimea imaginii */
+  width: auto;
+  height: 80vh;
   margin: 30px 30px;
   border-radius: 10%;
   object-fit: contain;
@@ -183,14 +192,14 @@ img {
   vertical-align: middle;
 }
 
-/* Stil pentru footer */
+/* footer styles */
 .site-footer {
-  background-color: #003e21; /* Fundal închis */
-  color: #fff; /* Text alb */
+  background-color: #003e21;
+  color: #fff;
   padding: 30px 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .site-footer .footer-content {
@@ -215,7 +224,7 @@ img {
 }
 
 .site-footer .footer-links a:hover {
-  color: #058743; /* Schimbă culoarea la hover */
+  color: #058743;
 }
 
 .home-sci {
@@ -244,43 +253,38 @@ img {
   background-color: rgba(227, 219, 219, 0.872);
 }
 
-/* Stil pentru partea de jos a footer-ului */
+/* copyright style */
 .footer-bottom {
   margin-top: 20px;
   font-size: 14px;
-  color: #aaa; /* Text mai deschis */
+  color: #aaa;
 }
 
 .footer-bottom p {
   margin: 0;
 }
 
-/* On smaller screens, decrease text size */
+/* Responsive styles */
 @media only screen and (max-width: 800px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
   .hideOnMobile {
     display: none;
   }
 
   .details {
-    text-align: center; /* Aliniaza textul în centrul containerului */
-    margin-bottom: 20px; /* Adaugă un spațiu sub secțiunea de detalii */
+    text-align: center; /* Aligns text to the center of the container */
+    margin-bottom: 20px; /* Adds spacing below the details section */
   }
 
   .home img {
-    max-width: 80%; /* Asigură că imaginea nu va depăși lățimea containerului */
-    height: auto;
-    margin-top: 20px; /* Adaugă un spațiu între imagine și restul conținutului */
+    max-width: 80%; /* Ensures the image does not exceed the container width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-top: 20px; /* Adds spacing above the image */
   }
   .home {
-    padding: 0 5%; /* Micșorează padding-ul */
-    flex-direction: column-reverse; /* Mută imaginea sub butoane */
-    align-items: center;
-    height: auto; /* Permite div-ului să se mărească pe ecrane mici */
+    padding: 0 5%; /* Reduces padding for smaller screens */
+    flex-direction: column-reverse; /* Moves the image below the buttons */
+    align-items: center; /* Centers the content horizontally */
+    height: auto; /* Allows the container to adjust its height dynamically */
   }
   .site-footer .footer-content {
     flex-direction: column;
@@ -290,32 +294,4 @@ img {
   .home-sci {
     margin-top: 20px;
   }
-}
-
-.links {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: brown;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-iframe {
-  max-width: 100%;
-}
-
-a:link a:visited {
-  color: coral;
-}
-
-.picture {
-  height: 50%;
-  width: 100%;
-  object-fit: cover;
 }
